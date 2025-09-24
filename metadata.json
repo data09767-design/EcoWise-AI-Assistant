@@ -1,0 +1,7 @@
+{
+  "name": "EcoWise AI Assistant",
+  "description": "An AI-powered assistant to help you track and reduce your electricity consumption and carbon footprint. Get personalized tips and chat with an AI expert to save energy, reduce costs, and achieve your sustainability goals.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

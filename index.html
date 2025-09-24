@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoWise AI Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              // New Metallic & Dark Theme Palette
+              'steel-dark': '#2D3748',   // Dark Gunmetal
+              'steel': '#4A5568',         // Mid-tone Steel
+              'steel-light': '#718096',  // Lighter Steel / Text
+              'cyan-glow': '#00F5FF',      // Electric Cyan for accents
+              'cyan-dark': '#0891B2',      // Darker Cyan
+              'surface': '#1A202C',      // Deepest background
+              'surface-card': '#252E3E', // Card background
+              'text-primary': '#F7FAFC',   // Off-white for primary text
+              'text-secondary': '#A0AEC0', // Gray for secondary text
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'card': '0 4px 14px 0 rgba(0, 245, 255, 0.1)',
+              'cyan-glow': '0 0 15px 0 rgba(0, 245, 255, 0.6)',
+            },
+            animation: {
+                'pulse-glow': 'pulse-glow 2s infinite ease-in-out',
+            },
+            keyframes: {
+                'pulse-glow': {
+                    '0%, 100%': { boxShadow: '0 0 10px 0 rgba(0, 245, 255, 0.4)' },
+                    '50%': { boxShadow: '0 0 20px 5px rgba(0, 245, 255, 0.7)' },
+                }
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "recharts": "https://aistudiocdn.com/recharts@^3.2.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-surface font-sans">
+    <div id="root"></div>
+  </body>
+</html>
